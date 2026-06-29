@@ -1,0 +1,36 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-license-001",
+  "title": "Source allow-list schema + licensing-gate policy (PMC-OA per-article; COSMIC/OncoKB/controlled-access hard-exclude)",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The licensing + provenance gate is the headline constraint of this project: no source may be touched until its allow-list entry is reviewer-approved. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Define the sources/allowlist.yml schema and the licensing-gate policy that governs which sources may ever be ingested, including the PMC-OA per-article resolution requirement and the categorical hard-exclude of non-open and controlled-access data.",
+  "acceptanceCriteria": [
+    "sources/allowlist.yml schema defines: name, custodian, URL/endpoint, format, license/PD basis, rights analysis, release/version, and status: approved|rejected|pending.",
+    "Policy states COSMIC/OncoKB/DrugBank/any non-open DB and all controlled-access/patient-level data are categorically rejected.",
+    "PMC-OA per-article license-resolution requirement documented (CC BY / NC / ND / CC0 / PD); facts-not-verbatim-text rule stated; CC BY-SA (ChEMBL) segregation rule stated."
+  ],
+  "output": "sources/allowlist.yml schema plus a licensing-gate policy document, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-ci-001",
+  "title": "CI scaffold: SHACL + Biolink-conformance + provenance-completeness + not-advice-label lint",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Automated gates enforce the project's hard constraints (provenance completeness, allow-list compliance, not-advice labeling) on every change. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Build the CI scaffold that validates exported data for SHACL conformance, Biolink conformance, provenance completeness, allow-list compliance, and the not-advice label.",
+  "acceptanceCriteria": [
+    "CI fails on any assertion lacking a provenance link or source-release stamp.",
+    "CI runs SHACL validation + Biolink-conformance on exported edges.",
+    "CI rejects data referencing a source not marked approved.",
+    "CI fails on any therapeutic-target assertion missing the 'not medical advice' label + evidence level."
+  ],
+  "output": "CI workflow + validation scripts (SHACL, Biolink, provenance, allow-list, not-advice lint), committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "https://biolink.github.io/biolink-model/"
+  ]
+}

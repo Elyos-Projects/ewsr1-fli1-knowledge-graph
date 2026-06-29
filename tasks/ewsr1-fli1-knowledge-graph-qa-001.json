@@ -1,0 +1,35 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-qa-001",
+  "title": "Expert citation + grounding audit of M1 batch (stratified, ≥95%)",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An independent expert audit verifies that extracted assertions are faithful to their cited open sources and that entity grounding is correct. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Run a stratified expert citation + grounding audit of the M1 batch against the cited open sources, by an auditor independent of the extractor, requiring ≥95% verification and zero confirmed false ID mappings.",
+  "acceptanceCriteria": [
+    "A stratified sample (min size ≥200 or whole release; strata by source and extraction method) is checked against the cited open source; ≥95% verify.",
+    "The auditor is independent of the extractor of the sampled records (no self-grading).",
+    "Entity grounding sampled separately: zero confirmed false ID mappings.",
+    "Citations checked are passage/record-level; collection-level citations rejected."
+  ],
+  "output": "An audit report documenting sampling, results (≥95%), and grounding findings, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md"
+  ]
+}

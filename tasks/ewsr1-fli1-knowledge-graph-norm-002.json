@@ -1,0 +1,33 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-norm-002",
+  "title": "Human-reviewed conflict + duplicate resolution workflow",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Conflict and duplicate resolution must keep a human in the loop and remain conflict-faithful — contradictory findings are retained side-by-side, never flattened. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Build a human-reviewed conflict + duplicate resolution workflow where merges are reversible, preserve all source provenance + evidence levels, and contradictory findings are retained side-by-side.",
+  "acceptanceCriteria": [
+    "No automatic merge/conflict-resolution ships without human confirmation; merges are reversible and preserve all source provenance + evidence levels.",
+    "Contradictory findings are retained side-by-side (conflict-faithful), not flattened."
+  ],
+  "output": "Conflict/duplicate-resolution workflow code + tests, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md"
+  ]
+}

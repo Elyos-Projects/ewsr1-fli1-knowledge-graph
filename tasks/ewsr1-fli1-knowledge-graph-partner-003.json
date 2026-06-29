@@ -1,0 +1,33 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-partner-003",
+  "title": "Secure steward adoption + ≥1 documented citation/use",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Project 'shipped' requires a named steward committing to adopt/host/cite the graph and at least one documented downstream reuse. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Secure a named research/advocacy steward (or KG consortium) that commits to adopt/host and cite the graph, and document at least one concrete citation or downstream reuse.",
+  "acceptanceCriteria": [
+    "A named research/advocacy steward (or KG consortium) commits to adopt/host and cite the graph.",
+    "≥1 concrete citation or downstream reuse (e.g. Monarch/Translator ingest) is documented."
+  ],
+  "output": "A steward-adoption record + documented citation/reuse evidence, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md"
+  ]
+}

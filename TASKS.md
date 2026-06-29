@@ -223,6 +223,35 @@ source-refresh + reviewer-rotation sustainability plan in effect.
 
 ---
 
+## Generated task index
+
+Every backlog row above is now decomposed into one schema-valid `tasks/<id>.json` (validated against
+`packages/schema` taskSchema). **Mapping is 1:1 — no fan-out:** each row names a single concrete task
+(no enumerated language/source/document dimension to expand), so each becomes exactly one task JSON.
+Acceptance criteria are reused verbatim from this file where the milestone "Acceptance criteria"
+blocks list them; for rows that lacked explicit per-task criteria (e.g. `iri-001`, `partner-001`,
+`export-001`, `partner-002`, `docs-001`, `metrics-001`, `partner-003`, `sustain-001`, and the
+backlog rows) checkable criteria were authored from each row's Title + Definition of Done. All tasks
+are `lane: donated`, `status: open`, `verifiedNeed: false` (no committed steward yet — TO BE SECURED).
+
+Standing guardrails are carried into every task `context`: open/PD/openly-licensed sources only;
+COSMIC/OncoKB/DrugBank/any non-open DB and all controlled-access/patient-level data are refused and
+out of scope; PMC-OA is resolved per-article (facts, not verbatim text); every therapeutic-target
+assertion is labeled "research evidence — not medical advice". No row in this backlog requests refused
+content (medical advice, eligibility, prognosis), so no task was skipped.
+
+- **M0:** `ewsr1-fli1-knowledge-graph-ontology-001` (seed), `-license-001`, `-license-002`,
+  `-prov-001`, `-iri-001`, `-ci-001`, `-partner-001`
+- **M1:** `-import-001`, `-data-001`, `-pmc-001`, `-retraction-001`, `-qa-001`, `-export-001`,
+  `-partner-002`
+- **M2:** `-norm-001`, `-norm-002`, `-explorer-001`, `-docs-001`, `-metrics-001`
+- **M3:** `-data-002`, `-partner-003`, `-sustain-001`
+- **Backlog:** `-data-003`, `-pmc-002`, `-sparql-001`, `-nanopub-001`, `-quality-001`, `-i18n-001`
+
+Total: 28 task files (1 pre-existing seed + 27 generated).
+
+---
+
 ## Example task JSON
 
 Schema-valid Task JSON for the first M0 task (`ewsr1-fli1-knowledge-graph-ontology-001`):

@@ -1,0 +1,35 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-prov-001",
+  "title": "Ratify provenance mechanism + countable assertion unit + source-version manifest",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every assertion in the graph must be a provenance-bearing unit so the 100%-provenance CI gate is checkable and any assertion is reproducible. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Choose one provenance mechanism (nanopublications vs named-graphs+PROV-O vs RDF-star), define the countable 'assertion' unit, and specify the source-version manifest format.",
+  "acceptanceCriteria": [
+    "One provenance mechanism chosen and applied uniformly; the countable 'assertion' unit defined so the 100%-provenance CI gate is checkable.",
+    "Source-version manifest format defined (CIViC snapshot, Open Targets release, Reactome version, PMC-OA snapshot) so any assertion is reproducible."
+  ],
+  "output": "A provenance-mechanism specification plus a source-version manifest format document, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "TASKS.md",
+    "https://biolink.github.io/biolink-model/"
+  ]
+}

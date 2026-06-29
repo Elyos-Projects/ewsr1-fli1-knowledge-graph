@@ -1,0 +1,36 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-data-001",
+  "title": "Import one approved source (CIViC EWSR1/FLI1 evidence) → assertions with provenance",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The first sourced slice proves the end-to-end pipeline on one approved CC0 source with full provenance. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Import the approved CIViC EWSR1/FLI1 evidence into Gene/Fusion/Disease/EvidenceAssertion/SourceDocument assertions, each carrying a resolvable provenance link, and pass CI.",
+  "acceptanceCriteria": [
+    "Records from one approved source mapped to Gene/Fusion/Disease/EvidenceAssertion/SourceDocument.",
+    "100% of new assertions carry a resolvable provenance link (source ID + license + release + method + evidence level).",
+    "Conflicting/superseded source statements retained with separate provenance + evidence levels.",
+    "Passes CI (SHACL + Biolink + provenance + not-advice-label + allow-list) before review."
+  ],
+  "output": "A provenance-bearing assertion dataset (KGX/JSON-LD) from CIViC EWSR1/FLI1 evidence, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "https://civicdb.org/"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-sustain-001",
+  "title": "Sustainability: source-refresh cadence + reviewer rotation/throughput plan",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "A sustainability plan keeps the graph current and the review pipeline staffed after initial delivery. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Write the sustainability plan covering source-refresh cadence and reviewer rotation/throughput.",
+  "acceptanceCriteria": [
+    "Source-refresh cadence is defined per source (with release-tracking).",
+    "Reviewer rotation/throughput plan is documented so the license + accuracy review pipeline stays staffed."
+  ],
+  "output": "A sustainability plan document, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md"
+  ]
+}

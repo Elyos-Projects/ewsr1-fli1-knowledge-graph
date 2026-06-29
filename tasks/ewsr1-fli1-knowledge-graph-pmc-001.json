@@ -1,0 +1,35 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-pmc-001",
+  "title": "License-checked PMC-OA fact-extraction prototype (facts, not verbatim text)",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "PMC-OA is the highest license-risk source: it is license-heterogeneous, so each article's license is resolved per-article and only structured facts (never verbatim copyrighted text) are extracted. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Prototype license-checked PMC-OA fact extraction that reads only per-article-approved articles and emits structured facts with passage-level citations, never redistributing verbatim copyrighted text.",
+  "acceptanceCriteria": [
+    "Only articles whose per-article license is resolved and approved are read.",
+    "Output is structured facts with passage-level citations (PMCID + location) — no verbatim redistribution of copyrighted text (esp. CC BY-NC / CC BY-NC-ND).",
+    "Extraction is assistive; uncertain extractions are flagged for human review, not asserted."
+  ],
+  "output": "A PMC-OA fact-extraction prototype + a small license-checked extracted-facts dataset with passage-level citations, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/"
+  ]
+}

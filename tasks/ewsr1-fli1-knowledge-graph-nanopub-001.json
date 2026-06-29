@@ -1,0 +1,34 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-nanopub-001",
+  "title": "Publish assertions to a nanopublication network/feed",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Publishing assertions as nanopublications improves downstream interoperability with the open linked-data ecosystem. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Publish the graph's assertions to a nanopublication network/feed for downstream interoperability.",
+  "acceptanceCriteria": [
+    "Assertions are serialized as valid nanopublications with provenance + publication info.",
+    "Nanopublications are published to a network/feed and are resolvable."
+  ],
+  "output": "Nanopublication publishing tooling + a published feed reference, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "https://nanopub.net/"
+  ]
+}

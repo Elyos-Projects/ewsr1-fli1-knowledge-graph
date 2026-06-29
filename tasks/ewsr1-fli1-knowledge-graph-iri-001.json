@@ -1,0 +1,35 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-iri-001",
+  "title": "Commit host-independent persistent IRI namespace (w3id.org) + CURIE policy",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Stable, host-independent identifiers are required so exports are citable and reconcilable against the wider linked-data web independent of any hosting. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Commit a host-independent persistent IRI namespace (w3id.org) and a CURIE policy for the knowledge graph's entities and assertions.",
+  "acceptanceCriteria": [
+    "A persistent, host-independent IRI namespace (w3id.org) is committed and documented.",
+    "A CURIE policy maps prefixes to the standard ontologies/registries used (HGNC, MONDO, SO, Reactome, ChEMBL, GO, ECO).",
+    "Resolution/redirect approach is host-independent so identifiers survive a hosting change."
+  ],
+  "output": "An IRI/CURIE policy document plus the w3id.org redirect configuration, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "https://w3id.org/"
+  ]
+}

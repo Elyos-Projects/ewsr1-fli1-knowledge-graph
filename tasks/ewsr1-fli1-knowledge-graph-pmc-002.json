@@ -1,0 +1,35 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-pmc-002",
+  "title": "Broaden PMC-OA literature extraction coverage (license-checked)",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Broadening PMC-OA extraction is the highest-license-risk work: each article passes the per-article license gate and only structured facts are extracted. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Broaden license-checked PMC-OA literature extraction coverage, enforcing the per-article license gate and emitting structured facts with passage-level citations only.",
+  "acceptanceCriteria": [
+    "Each article passes the per-article license gate before it is read.",
+    "Output is structured facts with passage-level citations — no verbatim redistribution of copyrighted text.",
+    "Uncertain extractions are flagged for human review, not asserted."
+  ],
+  "output": "An expanded license-checked PMC-OA extracted-facts dataset, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/"
+  ]
+}

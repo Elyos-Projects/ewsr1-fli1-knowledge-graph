@@ -1,0 +1,34 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-partner-001",
+  "title": "Steward + credentialed expert-reviewer outreach (status logged)",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "No partner/steward is yet secured (verifiedNeed: false); M0 requires a named License/ToS reviewer AND a credentialed biomedical/oncology accuracy reviewer. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Initiate outreach to candidate stewards and credentialed biomedical/oncology + license reviewers, and log status against the M0 reviewer-seat requirement.",
+  "acceptanceCriteria": [
+    "Candidate stewards and a credentialed biomedical/oncology accuracy reviewer + a License/ToS reviewer are identified and contacted.",
+    "Outreach status is logged (contacted / responded / committed) with dates.",
+    "The documented PLAN.md fallback is referenced for any unfilled reviewer seat (hard exit for M0)."
+  ],
+  "output": "An outreach/status log document (review/partners.md or equivalent), committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md"
+  ]
+}

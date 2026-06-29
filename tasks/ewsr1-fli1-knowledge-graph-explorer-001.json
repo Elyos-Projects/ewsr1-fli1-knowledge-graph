@@ -1,0 +1,33 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-explorer-001",
+  "title": "Public explorer (no accounts/PII; shows source + evidence level + \"not advice\")",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A lightweight public explorer makes the graph usable by non-programmers while surfacing source, evidence level, and the not-advice label, and collecting no PII. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Build a static, no-account public explorer to browse a Fusion/Gene/Pathway and its assertions, each shown with source, evidence level, and the 'not medical advice' label, linking to raw exports.",
+  "acceptanceCriteria": [
+    "Browse a Fusion/Gene/Pathway and see its assertions, each with source, evidence level, and the 'not medical advice' label.",
+    "Static / no-account; collects no visitor PII; links to raw KGX/JSON-LD/Turtle exports."
+  ],
+  "output": "A static public explorer (code + build) surfacing source/evidence/not-advice, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md"
+  ]
+}

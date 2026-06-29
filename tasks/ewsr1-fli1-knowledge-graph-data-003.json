@@ -1,0 +1,35 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-data-003",
+  "title": "Reactome pathway-perturbation enrichment for EWSR1-FLI1 targets",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Enrich the graph with Reactome pathway-perturbation context for EWSR1-FLI1 targets, after verifying the Reactome release license. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Add Reactome pathway-perturbation enrichment for EWSR1-FLI1 targets as provenance-bearing assertions, after confirming the Reactome release license.",
+  "acceptanceCriteria": [
+    "Reactome release license is verified and recorded in the allow-list before extraction.",
+    "Pathway-perturbation assertions for EWSR1-FLI1 targets carry full provenance + source release.",
+    "Assertions pass CI (SHACL + Biolink + provenance + allow-list)."
+  ],
+  "output": "A Reactome pathway-perturbation enrichment dataset, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "https://reactome.org/"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-import-001",
+  "title": "Structured importer for CIViC/Open Targets (assistive, flag-on-doubt)",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The structured importer maps approved source records into typed, provenance-bearing assertions; extraction is assistive and never invents. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Build a structured importer that maps CIViC / Open Targets records to typed assertions, preserving native evidence level and release version into provenance and flagging ambiguous fields for human review.",
+  "acceptanceCriteria": [
+    "Maps CIViC / Open Targets records to typed assertions, preserving each source's native evidence level and release version into provenance.",
+    "Therapeutic-target assertions auto-carry the 'research evidence — not medical advice' label.",
+    "Ambiguous fields are flagged for human review, never guessed."
+  ],
+  "output": "Importer code + tests mapping CIViC/Open Targets to typed assertions, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "https://civicdb.org/",
+    "https://platform.opentargets.org/"
+  ]
+}

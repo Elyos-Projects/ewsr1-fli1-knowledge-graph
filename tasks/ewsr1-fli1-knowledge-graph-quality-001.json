@@ -1,0 +1,33 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-quality-001",
+  "title": "Automated anomaly/outlier flagging for review",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Assistive anomaly/outlier flagging surfaces likely errors for human confirmation; it never auto-edits assertions. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Build assistive automated anomaly/outlier flagging that surfaces suspect assertions for human review without auto-modifying them.",
+  "acceptanceCriteria": [
+    "Anomalous/outlier assertions are flagged for human review.",
+    "Flagging is assistive only; no assertion is auto-modified or removed without human confirmation."
+  ],
+  "output": "Anomaly/outlier flagging tooling + tests, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md"
+  ]
+}

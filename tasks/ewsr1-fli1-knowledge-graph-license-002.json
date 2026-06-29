@@ -1,0 +1,38 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-license-002",
+  "title": "Analyze & record the 4 candidate sources (CIViC, Open Targets, Reactome, PMC-OA); ≥1 approved",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Before extraction can begin, the four candidate open sources must be analyzed for license/PD basis and the specific release pinned. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Analyze the four candidate sources (CIViC, Open Targets, Reactome, PMC-OA), record their license/PD basis and exact release in sources/allowlist.yml, and mark at least one as approved.",
+  "acceptanceCriteria": [
+    "The 4 candidate sources analyzed with recorded license/PD basis + exact release; ≥1 marked approved.",
+    "Reactome and Open Targets licenses confirmed for the specific release (not assumed).",
+    "Anti-laundering controls referenced (passage/record-level citation, attestation, spot-checks)."
+  ],
+  "output": "Completed sources/allowlist.yml entries for the 4 candidate sources (≥1 approved) plus a rights-analysis note, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "https://civicdb.org/",
+    "https://platform.opentargets.org/",
+    "https://reactome.org/",
+    "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/"
+  ]
+}

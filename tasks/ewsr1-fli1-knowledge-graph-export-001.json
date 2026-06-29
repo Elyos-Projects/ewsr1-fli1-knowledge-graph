@@ -1,0 +1,36 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-export-001",
+  "title": "KGX/Biolink + JSON-LD + Turtle + nanopub export tooling",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Standard, interoperable exports under the persistent-IRI namespace make the graph machine-consumable by other open projects (Monarch, Translator). Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Build export tooling that emits KGX/Biolink, JSON-LD, Turtle, and nanopublication serializations under the persistent-IRI namespace with a source-version manifest.",
+  "acceptanceCriteria": [
+    "Exports valid KGX/Biolink edges plus JSON-LD and Turtle serializations of the same assertions.",
+    "Exports are produced under the persistent-IRI namespace and accompanied by a source-version manifest.",
+    "Nanopublication export is produced for downstream interoperability."
+  ],
+  "output": "Export tooling + sample exports (KGX/JSON-LD/Turtle/nanopub) + source-version manifest, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "https://github.com/biolink/kgx",
+    "https://biolink.github.io/biolink-model/"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-sparql-001",
+  "title": "Optional hosted SPARQL endpoint",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "An optional hosted SPARQL endpoint would make the graph directly queryable; it depends on steward hosting. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Stand up an optional hosted SPARQL endpoint over the published graph (dependent on steward hosting).",
+  "acceptanceCriteria": [
+    "A SPARQL endpoint serves the published assertions with their provenance.",
+    "Endpoint is read-only, collects no PII, and surfaces the not-advice framing in its docs."
+  ],
+  "output": "SPARQL endpoint deployment config + query docs, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md"
+  ]
+}

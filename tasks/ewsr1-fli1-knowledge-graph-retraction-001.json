@@ -1,0 +1,35 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-retraction-001",
+  "title": "Retraction/supersession screening gate (PubMed + Retraction Watch)",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Cited literature must be screened for retraction/withdrawal so retracted findings are not silently asserted. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Build a screening gate that checks every cited PMID against PubMed retraction notices and the Retraction Watch dataset, flagging and withholding/annotating retracted sources.",
+  "acceptanceCriteria": [
+    "Every cited PMID is screened against PubMed retraction notices + the Retraction Watch dataset.",
+    "Retracted/withdrawn sources are flagged and their assertions withheld or annotated."
+  ],
+  "output": "Retraction-screening code + tests integrated into the pipeline, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "https://www.ncbi.nlm.nih.gov/pubmed/",
+    "http://retractiondatabase.org/"
+  ]
+}

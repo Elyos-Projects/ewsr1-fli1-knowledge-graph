@@ -1,0 +1,34 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-docs-001",
+  "title": "Data dictionary + usage/citation + \"not medical advice\" guide",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Documentation makes the graph correctly reusable and citable and makes the not-advice framing unmissable for downstream users. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Write the data dictionary plus a usage/citation guide and a prominent 'not medical advice' guide for the published graph.",
+  "acceptanceCriteria": [
+    "Data dictionary documents every class, property, and the provenance/evidence-level fields.",
+    "Usage/citation guide explains how to cite the graph and its source-version manifest.",
+    "A prominent 'not medical advice' guide states the research-evidence framing."
+  ],
+  "output": "Data dictionary + usage/citation + not-advice guide (docs/), committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md"
+  ]
+}

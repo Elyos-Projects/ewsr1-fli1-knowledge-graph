@@ -1,0 +1,34 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-partner-002",
+  "title": "Engage ≥1 candidate steward + the expert reviewer",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Moving the secured beneficiary forward, M1 requires engaging at least one candidate steward and the credentialed expert reviewer. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Engage at least one candidate steward and the credentialed expert reviewer, documenting the commitment status.",
+  "acceptanceCriteria": [
+    "≥1 candidate steward is actively engaged (beyond initial outreach).",
+    "The credentialed expert reviewer is engaged for the M1 audit.",
+    "Engagement status is documented and dated."
+  ],
+  "output": "An updated partner/reviewer engagement log, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md"
+  ]
+}

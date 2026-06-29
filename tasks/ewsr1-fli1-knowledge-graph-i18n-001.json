@@ -1,0 +1,33 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-i18n-001",
+  "title": "Multilingual entity labels via ontology cross-refs",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Multilingual entity labels (drawn from CC0 ontology cross-references where available) widen accessibility without inventing labels. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Add multilingual entity labels via ontology cross-references, using CC0 labels where available and never fabricating translations.",
+  "acceptanceCriteria": [
+    "Multilingual labels are sourced from ontology cross-references (CC0 labels where available); provenance recorded.",
+    "No labels are fabricated; entities without an available label remain unlabeled (gaps stay gaps)."
+  ],
+  "output": "A multilingual entity-label dataset (CC0 cross-refs), committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md"
+  ]
+}

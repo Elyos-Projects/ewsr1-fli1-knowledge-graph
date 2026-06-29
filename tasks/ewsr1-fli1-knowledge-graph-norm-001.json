@@ -1,0 +1,38 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-norm-001",
+  "title": "Entity grounding/normalization to HGNC/MONDO/Reactome/ChEMBL/SO (precision-first)",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "open-data",
+    "bioinformatics",
+    "knowledge-graph",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Entities must be grounded to standard IDs (precision over recall) so the graph reconciles against the wider biomedical linked-data web; ChEMBL (CC BY-SA) crosswalks are segregated/labeled. Only open / public-domain / openly-licensed sources (CIViC CC0, Open Targets CC0, Reactome, license-checked PMC open-access subset); COSMIC, OncoKB, DrugBank, any non-open DB and all controlled-access / patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope and refused. No patient data; all therapeutic-target content is research evidence labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Ground/normalize entities to standard IDs (gene→HGNC/Ensembl, disease→MONDO, pathway→Reactome, compound→ChEMBL, sequence feature→SO) with a precision-first blocking strategy and ≥95% coverage.",
+  "acceptanceCriteria": [
+    "Entities grounded to standard IDs (gene→HGNC/Ensembl, disease→MONDO, pathway→Reactome, compound→ChEMBL, sequence feature→SO); ≥95% grounding coverage.",
+    "Uses an explicit candidate-blocking strategy (normalized symbol + entity type + context); the grounder is tuned for precision over recall.",
+    "Zero confirmed false mappings in the grounding audit sample."
+  ],
+  "output": "A grounding/normalization crosswalk dataset (entity→standard ID) with audit, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "https://www.genenames.org/",
+    "https://mondo.monarchinitiative.org/",
+    "https://reactome.org/",
+    "https://www.ebi.ac.uk/chembl/"
+  ]
+}

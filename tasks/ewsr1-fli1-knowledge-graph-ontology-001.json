@@ -1,0 +1,36 @@
+{
+  "id": "ewsr1-fli1-knowledge-graph-ontology-001",
+  "title": "Define core schema (9 classes) aligned to Biolink + standard ontologies",
+  "project": "ewsr1-fli1-knowledge-graph",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-data", "bioinformatics", "knowledge-graph", "ewing-sarcoma"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, linked knowledge graph of EWSR1-FLI1 / EWSR1-ETS fusion biology in Ewing sarcoma needs a shared, Biolink-aligned schema before any data is ingested. Sources are OPEN only: CIViC (CC0), Open Targets (CC0), Reactome (verify release license), and the license-checked PMC open-access subset. COSMIC, OncoKB, DrugBank, and any controlled-access or patient-level data (dbGaP, EGA, biobanks, EHR) are out of scope. All therapeutic-target content is research evidence and must be labeled 'not medical advice'. See PLAN.md.",
+  "objective": "Define the nine core classes (Gene, Fusion, FusionBreakpoint, Disease, Pathway, Mechanism, TherapeuticAgent, EvidenceAssertion, SourceDocument) and their edges, mapping each to the Biolink Model and to HGNC/MONDO/SO/Reactome/ChEMBL/GO/ECO wherever an equivalent exists, modeling the EWSR1-ETS partner family and breakpoint subtypes, and representing conflicting/superseded findings rather than flattening them.",
+  "acceptanceCriteria": [
+    "All 9 classes defined with properties, datatypes, and cardinality.",
+    "Each class/edge mapped to the Biolink Model and to HGNC/MONDO/SO/Reactome/ChEMBL/GO/ECO where one exists; gaps documented.",
+    "Fusion and FusionBreakpoint model the EWSR1-ETS family (FLI1, ERG, FEV, ETV1/4) and Type 1/2 breakpoint subtypes via Sequence Ontology.",
+    "EvidenceAssertion reserves provenance, evidence-level, source-release, and 'not medical advice' slots.",
+    "Conflicting/superseded-assertion representation specified (no single forced 'truth').",
+    "Published as a Biolink-conformant schema plus a SHACL stub and a human-readable spec."
+  ],
+  "resources": [
+    "planning/projects/ewsr1-fli1-knowledge-graph/PLAN.md",
+    "planning/ROADMAP.md",
+    "https://biolink.github.io/biolink-model/",
+    "https://civicdb.org/",
+    "https://platform.opentargets.org/",
+    "https://reactome.org/"
+  ],
+  "output": "A schema specification document (ontology/README.md) plus a Biolink-conformant schema and SHACL stub defining the 9 classes and their ontology mappings, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0"
+}
